@@ -1,0 +1,32 @@
+<form method="post" action="/users/register">
+
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" name="name" class="form-control" placeholder="Name">
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" name="email" class="form-control" placeholder="Email">
+    </div>
+    
+    <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="text" name="mobilenumber" class="form-control" placeholder="Mobile Number">
+    </div>
+
+    <div class="form-group">
+        <label>Referral Code</label>
+        <input type="text" name="refcode" class="form-control"  placeholder="Referral Code">
+    </div>
+    
+    <button type="submit" class="btn btn-default" href="/paytm/payment"onclick="https://localhost:3000/paytm/payment" >Register</button>
+    <a class="btn btn-primary buynow" type="submit" target="https://localhost:3000/paytm/payment" href="/paytm/payment"onclick="https://localhost:3000/paytm/payment" >Buy now</a>
+    <script>
+        $(function() {
+            $('a.buynow').on('click', function () {
+                    $('https://localhost:3000/paytm/payment').click();
+                });    
+            });
+        </script>
+</form>
